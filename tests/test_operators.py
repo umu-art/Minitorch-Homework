@@ -178,6 +178,7 @@ def test_sum_distribute(ls1: List[float], ls2: List[float]) -> None:
     elementwise_sum = sum(zipWith(add)(ls1, ls2))
     assert_close(add(sum(ls1), sum(ls2)), elementwise_sum)
 
+
 @pytest.mark.task0_3
 @given(lists(small_floats))
 def test_sum(ls: List[float]) -> None:

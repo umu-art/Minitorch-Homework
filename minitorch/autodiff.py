@@ -114,7 +114,6 @@ def backpropagate(variable: Variable, deriv: Any) -> None:
                 derivatives[parent.unique_id] = derivatives.get(parent.unique_id, 0.0) + d_in
 
 
-
 @dataclass
 class Context:
     """
