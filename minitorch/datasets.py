@@ -21,6 +21,13 @@ class Graph:
 
 
 def simple(N: int) -> Graph:
+    """
+    Generate random points and split them into clusters by rule x_1 < 0.5
+
+    :param N: number of points to generate
+    :return: Graph
+    """
+
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
