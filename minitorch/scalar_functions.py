@@ -152,6 +152,7 @@ class Sigmoid(ScalarFunction):
         (sig_a,) = ctx.saved_values
         return sig_a * (1.0 - sig_a) * d_output
 
+
 class ReLU(ScalarFunction):
     "ReLU function"
 
